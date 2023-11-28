@@ -1,0 +1,64 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Ping Pong Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+</head>
+
+<body background="background.avif">
+    <center>
+        <h1 class="btn btn-danger heading">AI Ping Pong Web App</h1>
+        <button id="instructions" class="btn btn-danger" data-toggle="modal"
+            data-target="#instruct">*INTRUCTIONS*</button>
+        <br>
+        <br>
+        <button id="startGame" class="btn btn-success" onclick="startGame()">START GAME</button>
+        <br>
+        <h3 class="btn btn-primary" id="status">Status: </h3>
+        <br>
+        <div id="canvas"></div>
+
+        <div id="instruct" class="modal fade">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Instructions:</h4>
+                </div>
+
+                <div class="modal-body">
+                    <text>
+                        1. Keep your laptop screen straight.
+                        <br>
+                        <br>
+                        2. Move yourself approximately 3-4 feet away from the laptop.
+                        <br>
+                        <br>
+                        3. As you move your right wrist in an ascending and descending manner, a red dot should appear
+                        on your right wrist.
+                        <br>
+                        <br>
+                        4. Press the "Start Game" button, and move yourself 3-4 feet away from the laptop again.
+                        <br>
+                        <br>
+                        5. The red paddle is yours, which will move as per the movement of your right wrist.
+                    </text>
+                </div>
+            </div>
+        </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+
+</html>

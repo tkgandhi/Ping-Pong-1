@@ -1,0 +1,36 @@
+body
+{
+    background-size:cover;
+    background-position: center;
+    font-family: 'Neucha', cursive;
+}
+
+.heading
+{
+    font-size: 20px;
+    width: 88%;
+    margin: 0px;
+}
+
+#instructions
+{
+    font-size: 20px;
+    width: 10%;
+    margin: 0px;
+}
+
+/*
+
+.footer
+{ 
+    position:fixed;
+    font-size: 18px;
+    color: black;
+    bottom:0;
+    width:100%;
+    line-height:3;
+    text-align:center;
+}
+
+FROM FONT MANIPULATOR
+*/
